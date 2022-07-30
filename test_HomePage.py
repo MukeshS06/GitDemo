@@ -27,5 +27,13 @@ class TestHomePage(BaseClass):
 
     @pytest.fixture(params=HomePageData.getTestData("Testcase2"))
     def getData(self, request):
+
+        print("this is my code mukesh ")
+        self.driver.find_element_by_css_selector("[type='submit']").click()
+        print("this is my code mukesh2 ")
+        self.driver.find_element_by_css_selector("[type='submit']").click()
+        print("this is my code mukesh3 ")
+        self.driver.find_element_by_css_selector("[type='submit']").click()
+
         return request.param
 

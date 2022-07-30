@@ -35,7 +35,11 @@ class TestOne(BaseClass):
         # time.sleep(5)
         self.verifyLinkPresence("India")
 
-        print("this is my code")
+        print("this is my code mukesh ")
+        self.driver.find_element_by_css_selector("[type='submit']").click()
+        print("this is my code mukesh2 ")
+        self.driver.find_element_by_css_selector("[type='submit']").click()
+        print("this is my code mukesh3 ")
         self.driver.find_element_by_css_selector("[type='submit']").click()
 
         self.driver.find_element_by_link_text("India").click()
